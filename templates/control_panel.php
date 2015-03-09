@@ -15,4 +15,11 @@
     <input id="inputGPA" placeholder="GPA" class="form-control">
 </div>
 <input id="inputID" type="hidden">
-<button type="button" class="btn btn-primary">Добавить</button>
+<div class="form-group">
+    <button type="button" id="addButton" class="btn btn-primary">Добавить</button>
+    <button type="button" id="cancelButton" class="btn btn-primary hide">Отмена</button><br/>
+</div>
+<div class="form-group">
+    <button type="button" id="deleteButton" class="btn btn-danger hide">Удалить</button>
+    <button type="button" id="updateButton" class="btn btn-primary hide">Обновить</button>
+</div>

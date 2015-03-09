@@ -16,10 +16,9 @@ class DataBase {
 
     public function addRow($data) {
         $add = $this->pdo->prepare('INSERT INTO students (name, last_name, date_of_birth, gpa) values (:name, :last_name, :date_of_birth, :gpa)');
-        $add->execute($data);
-        $error = $add->errorInfo();
-        if ($error) {
+        if (!$add->execute($data)) {
+            $error = $add->errorInfo();
             var_dump($error);die;
-        }
+        };
     }
 }
