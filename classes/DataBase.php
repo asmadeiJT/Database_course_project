@@ -21,4 +21,12 @@ class DataBase {
             var_dump($error);die;
         };
     }
+
+    public function deleteRow($data) {
+        $delete = $this->pdo->prepare('DELETE FROM students WHERE ID = :ID');
+        if (!$delete->execute($data)) {
+            $error = $delete->errorInfo();
+            var_dump($error);die;
+        }
+    }
 }

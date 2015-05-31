@@ -4,7 +4,17 @@ jQuery( document).ready(function($) {
 
     studentsTableWrap.find('tr').on('click', function() {
         studentsTableWrap.find('tr').removeClass('info');
-        $(this).addClass('info')
+        $(this).addClass('info');
+        var name = $(this).data('name'),
+            lastName = $(this).data('last-name'),
+            dateOfBirth = $(this).data('date-of-birth'),
+            gpa = $(this).data('gpa');
+        $('#inputName').val(name);
+        $('#inputLastName').val(lastName);
+        $('#inputDateOfBirth').val(dateOfBirth);
+        $('#inputGPA').val(gpa);
+
+
     });
 
     $('#addButton').on('click', function() {

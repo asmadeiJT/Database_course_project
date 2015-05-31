@@ -16,10 +16,7 @@
 </div>
 <input id="inputID" type="hidden">
 <div class="form-group">
-    <button type="button" id="addButton" class="btn btn-primary">Добавить</button>
-    <button type="button" id="cancelButton" class="btn btn-primary hide">Отмена</button><br/>
-</div>
-<div class="form-group">
-    <button type="button" id="deleteButton" class="btn btn-danger hide">Удалить</button>
-    <button type="button" id="updateButton" class="btn btn-primary hide">Обновить</button>
+    <button type="button" id="addButton" class="btn btn-primary">Add</button>
+    <button type="button" id="updateButton" class="btn btn-info">Update</button>
+    <button type="button" id="deleteButton" class="btn btn-danger">Delete</button>
 </div>
